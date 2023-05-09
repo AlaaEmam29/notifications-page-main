@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap");
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.notifications {
+  margin: 8rem auto 2rem auto;
+  max-width: 75rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 7px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.notifications .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.notifications .num {
+  background-color: var(--blue);
+  padding: 0.3rem 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+.notifications .readit {
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+.notifications-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.notifications .notification {
+  width: 100%;
+  display: flex;
+  background-color: var(--Light-grayish-blue-2);
+  padding: 2rem 1.75rem;
+  gap: 1rem;
+  border-radius: 7px;
+}
+.notifications .col {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.notifications .text {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notifications .text img {
+  margin-left: auto;
+  height: 6rem;
+}
+.notifications .text p {
+  color: var(--Dark-grayish-blue);
+}
+.notifications .person {
+  color: var(--Very-dark-blue);
+  margin-right: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.notifications .now .person {
+  color: var(--Very-dark-blue);
+}
+.notifications .now .person:hover {
+  color: var(--blue);
+}
+.notifications .dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--red);
+  align-self: center;
+}
+.notifications .post {
+  color: var(--blue);
+  margin-left: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.notifications .img {
+  height: 5.75rem;
+}
+.notifications .time {
+  margin-left: 1rem;
+  color: var(--Grayish-blue);
+}
+.notifications .past {
+  background-color: transparent;
+}
+
+a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution {
+  font-size: 1.9rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.message {
+  background-color: var(--Light-grayish-blue-1);
+  font-size: 1.9rem;
+  padding: 2rem 2.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.block {
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  height: 0;
+}
